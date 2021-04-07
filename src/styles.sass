@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming'
+@include mat-core()
+
+
+$TFG-primary: mat-palette($mat-indigo)
+$TFG-accent: mat-palette($mat-pink, A200, A100, A400)
+$TFG-warn: mat-palette($mat-red)
+
+$TFG-theme: mat-light-theme
+  color: 
+    primary: $TFG-primary,
+    accent: $TFG-accent,
+    warn: $TFG-warn,
+  
+
+
+@include angular-material-theme($TFG-theme-dark)
+
+
